@@ -1,4 +1,4 @@
-# SQL Tutorial - Creating Tables and Rows
+# SQL Tutorial 
 In this Tutorial I will be showcasing basic fundamentals and usage of SQL! I will try my best to make this as user friendly as possible!
 <h2>What is SQL?</h2>
 SQL stands for Structured Query Language which is a language and tool that is designed specifically for interacting with databases. It allows you to perform various tasks including querying data, inserting and deleting current records. When you think of the Usage of SQL, think of CRUD. (Create, Read, Update, Delete)
@@ -93,27 +93,55 @@ It is time to start creating the rows for our table
 
 1. Let's insert our 1st row to our table. Run the command <b>"insert into leaf_village values (7, "Naruto", "Genin");</b>
     >**Note:** <b>It is important to enter the values of the row just as specified in the prior steps when we created the table. (team, name, nin_rank)</b>
+    
 
 ![step 11](https://github.com/loddysworld/Managing-Microsoft-Entra-ID-Identities/assets/134660738/d9639427-15b0-4b59-ae2a-8a8d082ac303)
 
+
 2. Let's check the table to make sure we entered it correctly. Run the command <b>"select * from leaf_village;"<b/>
-    >**Note:** <b>The * allows us to pull all data from the selected table specified</b>
+    >**Note:** <b>The "*" allows us to pull all data from the selected table specified.</b>
+    
 
  ![step 12](https://github.com/loddysworld/Managing-Microsoft-Entra-ID-Identities/assets/134660738/ed0a1c30-c0ff-4f95-b6a1-4b846b88bd03)
+ 
 
- 3. Now that we have created our 1st row, let's add some more!
-    >**Challenge!:** <b>Add 4 more rows to your current table</b>
+3. Now that we have created our 1st row, let's add some more!
+        >**Challenge!:** <b>Add 4 more rows to your current table</b>
+
 
 4. Now lets check our work. Go ahead and run <b>"select * from leaf_village;"</b>
 
+
 ![step 13](https://github.com/loddysworld/Managing-Microsoft-Entra-ID-Identities/assets/134660738/0e5c4c76-fd7c-4f5a-8c2d-a193b13e36b1)
 
-  >**Challenge!:** <b>Now that you have made it through making this table; go ahead and make another table from scratch and practice the steps above!</b>
+
+5. Now that we have more entries on our table, Let's learn to remove a row. Let's remove Sasuke since he went rogue on our team. Run the command <b>"delete from leaf_village where name = "Sasuke";"</b>. We can confirm that the entry was removed by running <b>"select * from leaf_village;"</b>
+
+![step 14](https://github.com/loddysworld/Managing-Microsoft-Entra-ID-Identities/assets/134660738/329c428f-e3d0-4a98-a271-c5c0f0f5aeda)
+
+
+6. Looks like Naruto passed his Chuunin exams Finally! Let's update his nin_rank. To change an entry in our table, run the command <b>"update leaf_village set nin_rank = "Chuunin" where name = "Naruto";"</b>. Go ahead and verify that this has been updated as well.
+
+![step 15](https://github.com/loddysworld/Managing-Microsoft-Entra-ID-Identities/assets/134660738/19c56110-332b-4895-9468-882cfb09eb91)
+
+
+7. Last thing for this lesson, let's add one more column to the table for missions. To do that, run the following command <b>"alter table leaf_village add missions varchar(20);"</b>. If done correctly, your table should look like the one below.
+
+![step 16](https://github.com/loddysworld/Managing-Microsoft-Entra-ID-Identities/assets/134660738/3a30bcb7-8096-4568-bf60-2c342e50f04f)
+
+
+  >**Challenge!:** <b>Now that we added another column, go ahead and update the data in the column!</b>
+  
+
+8. Data should look like this by the end of the challenge!
+
+![step 17](https://github.com/loddysworld/Managing-Microsoft-Entra-ID-Identities/assets/134660738/8eb99db8-29d4-4bd9-bde0-1694a8655e79)
+
 
 
 ### Congrats!
 
-Congrats on taking the 1st steps of learning SQL and making it this far in my tutorial. I hope this was helpful and insightful in your journey of furthering your skills!
+Congrats on taking the 1st steps of learning SQL and making it this far in my tutorial. I hope this was helpful and insightful in your journey of furthering your skills! I will be creating another Tutorial on creating Joins and Views to unlock the full capacity of SQL!
 Please feel free to follow and share if this was easy to follow and have a focused future!
 
 ![naruto](https://github.com/loddysworld/Managing-Microsoft-Entra-ID-Identities/assets/134660738/b57a6f70-2e50-4588-880b-fcf6f3465229)
